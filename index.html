@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation With Js</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ffff20;
+            text-align: center;
+            color: black;
+            padding: 50px 0;
+        }
+        h1{
+            font-size: 60px;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 40px;
+            margin-bottom: 1rem;
+        }
+        #addSubject{
+            margin-top: 40px;
+            width: 550px;
+            margin-left:auto ;
+            margin-right: auto;
+        }
+        #addSubject input{
+            font-size: 18px;
+            padding: 1rem;
+            border-radius: 8px;
+            border: none;
+        }
+        #addSubject input:focus{
+            outline: none;
+        }
+        #addSubject button{
+            font-size: 18px;
+            padding: 1rem 4rem;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-weight: 500;
+            transition: .3s ease-in-out;
+        }
+        #addSubject button:hover{
+            background-color: white;
+            color: black;
+        }
+        .subject-list-area{
+            width: 550px;
+            margin-left:auto ;
+            margin-right: auto;
+            text-align: left;
+            margin-top: 30px;
+        }
+        .subject-list-area h3{
+            font-size: 35px;
+        }
+        #subjectList{
+            margin-top: 20px;
+        }
+        .subject{
+            display: flex;
+            column-gap: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.556);
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+        .subject input{
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            padding: 8px 0;
+            text-transform: capitalize;
+        }
+        .subject input:focus{
+            border: none;
+            outline: none;
+        }
+        .subject button{
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-weight: 500;
+            transition: .3s ease-in-out;
+            padding: 10px 16px;
+            text-transform: capitalize;
+        }
+        .subject button:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript CRUD operation</h1>
+    <p>Now i will show how to add/delete/edit data with Javascript</p>
+    <form id="addSubject">
+        <h2>Add your desire subject:</h2>
+        <input id="addInput" type="text" placeholder="Add subject">
+        <button id="addSubmit" type="submit">ADD</button>
+    </form>
+
+    <div class="subject-list-area">
+        <h3>Your Subject List:</h3>
+        <div id="subjectList"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
